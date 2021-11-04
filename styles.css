@@ -1,0 +1,288 @@
+/* ===============================
+   Colour Palette:
+   ---------------
+   Light Cream:	#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+/* General */
+
+
+
+body {
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizelegibility;
+   background-image: url(../images/bg-tile.gif);
+}
+
+.container {
+   margin: 0 200px;
+}
+
+
+/* Typography */
+
+h1, h2 {
+   font-family: Love Ya Like A Sister;
+   color:#d17f38;
+}
+
+h1 {
+   font-size: 30px;
+   text-align: center;
+}
+
+h1 em {
+   color: #4b2707;
+}
+
+h2 {
+   font-size: 30px;
+   margin: 0;
+}
+
+h3 {
+   display:inline-block;
+   margin-bottom: 4px;
+}
+
+p.lead {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 30px;
+}
+
+p {
+   font-family: Open sans;
+   text-align: left;
+   margin: 0;
+   font-size: 17px;
+}
+
+a:link, a:visited {
+   color: #d17f38;
+}
+
+a:hover {
+   color: #f2f3ee;
+}
+
+hr {
+   height: auto;
+   width: auto;
+   content: url(../images/divider.png);
+   border: none;
+   margin-bottom: 30px;
+}
+
+
+/* Header */
+
+body > div:nth-child(1) > header > nav > ul > li:nth-child(5) > a{
+   background-image: url(../images/tiny-donut.png);
+   background-repeat: no-repeat;
+   background-position: top;
+   padding-top: 22px;
+   color: #4b2707;
+}
+
+body > div:nth-child(1) > header > nav > ul > li:nth-child(5) > a:hover{
+   color: #d17f38;
+}
+
+header nav {
+   height: 175px;
+   
+}
+
+header nav ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   
+}
+
+header nav ul li {
+   margin-right: 50px;
+   
+}
+
+header nav ul li a {
+   text-decoration: none;
+   font-family: Open Sans;
+   font-weight: bold;
+   align-items: center;
+   color: #d17f38;
+   text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+   color: #4b2707;
+}
+
+header nav ul li#logo a {
+   content: url(../images/logo.png);
+ 
+}
+
+header nav ul li#logo a:hover {
+   content: url(../images/logo-hover.png);
+}
+
+
+/* Hero */
+
+
+
+#hero {
+   background-image: url(../images/bg-tile-yellow.gif);
+}
+
+#hero .container {
+   height: 530px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#hero .large-ribbon {
+   content: url(../images/fresh-whole-ingredients.png);
+   position: absolute;
+   top: 165px;
+   right: 240px;
+}
+
+
+/* The Whole Story */
+
+
+
+#whole-story > h1{
+   background-image: url(../images/header-divider.png);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   padding-bottom: 20px;
+}
+
+#story-excerpt {
+   width: 55%;
+   float: left;
+}
+
+#best-donut {
+   width: 40%;
+   float: right;
+   background-repeat: no-repeat;
+   margin-bottom: 20px;
+}
+#best-donut::before{
+   content: url(../images/award.png);
+}
+
+
+/* News & Events */
+
+#articles {
+   width: 49%;
+   float: left;
+   margin-bottom: 50px;
+}
+
+#feature-image {
+   float: right;
+}
+
+#news-events article {
+   display: flex;
+   justify-content: space-around;
+}
+
+#news-events article.news {
+   display: inline;
+}
+
+#news-events article.news::before{
+   content: url(../images/icon-news.png);
+}
+
+
+
+#news-events article.event {
+   display: inline;
+}
+
+#news-events article.event::before{
+   content: url(../images/icon-calendar.png);
+}
+
+#news-events header time {
+
+}
+
+#news-events section.excerpt {
+
+}
+
+#news-events footer {
+
+}
+
+
+/* Footer */
+
+footer.main {
+   background-image: url(../images/bg-tile-brown.gif);
+   height: 185px;
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer.main a:hover {
+}
+
+#uncopyright, #credits {
+}
+
+#uncopyright::before{
+   content: url(../images/icon-recycle.png);
+}
+
+#credits::before{
+   content: url(../images/icon-apple.png);
+}
+
+#uncopyright {
+   width: 30%;
+   float: left;
+   color: white;
+}
+
+#credits {
+   width: 25%;
+   float: right;
+   color: white;
+;}
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
